@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../webDauTien/assets/themify-icons/themify-icons.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: auto;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            width: 80%;
+            height: 800px;
+            background-color: aquamarine;
+            border: 1px solid black;
+        }
+        header{
+            width: 100%;
+            height: 150px;
+            background-color: rgb(41, 78,121);
+            display: flex;
+        }
+        .hleft{
+            width: 35%;
+            height: 100%;
+            display: flex;
+            margin: 0;
+        }
+        .hleft img{
+            width: 30%;
+            height: 100%;
+            float: left;
+            margin: 0;
+            padding: 10px;
+        }
+        .hleft .hlefttd{
+            width: 70%;
+            height: 100%;
+            color: aliceblue;
+            font-weight: bold;
+            margin: 20px 2px;
+            padding: 15px;
+        }
+        .hlefttd p{
+            font-size: 20px;
+        }
+        .hright{
+            width: 65%;
+            height: 100%;
+            display: inline-block;
+            margin: 0;
+        }
+        .hright .hrtim{
+            margin: 5px 10px 5px 10px;
+            width: 100%;
+            height: 40%;
+            float: right;
+        }
+        .hright .hrtim .a{
+            float: right;
+        }
+        .menu>ul>li{
+            display: inline-block;
+            padding: 25px;
+            background-color: aqua;
+            font-weight: bold;
+        }
+        .hright .menu{
+            width: 100%;
+            height: 60%;
+            margin-right: 20px;
+            text-align: right;
+            padding: 0 0 5px 0;
+            margin-top: 50px;
+            padding-right: 5px;
+        }
+        .submenu{
+            display: none;
+            position: absolute;
+            padding: 0;
+            background-color: aqua;
+            margin: 25px 0  0 -25px;
+            text-align: left;
+        }
+        .submenu li{
+            padding: 25px;
+            list-style: none;
+        }
+        .menu li:hover,.submenu li:hover{
+            background-color: yellow;
+        }
+        .menu li:hover .submenu{
+            display: block;
+        }
+        .center{
+            height:600px;
+            width: 100%;
+            background-color: white;
+            display: flex;
+        }
+        .tinTrai{
+            width: 65%;
+            height: 100%;
+            margin: 0;
+            padding: 40px 15px;
+        }
+        h2{
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        .thanTrai{
+            display: flex;
+        }
+        .tinTrai .thanTrai{
+            border-top: 3px dotted black;
+            padding: 10px;
+            width: 100%;
+            height: 90%;
+            margin: 0;
+        }
+        .thanTrai .t1{
+            height: 100%;
+            width: 50%;
+            margin: 0;
+        }
+        .t1 p{
+            font-weight: bold;
+            line-height: 1.5;
+            color: coral;
+            font-size: 18px;
+            text-shadow: 6px 4px 5px forestgreen;
+        }
+        table{
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            color: darkgray;
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 5px;
+        }
+        .t1 .sub{
+            padding: 5px;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .thanTrai .t2{
+            height: 100%;
+            width: 50%;
+            margin: 0;
+        }
+        .t2 p{
+            font-size: 38px;
+            text-align: center;
+            width: 100%;
+            height: 10%;
+        }
+        .t2 .t2thongTin{
+            width: 100%;
+            height: 90%;
+            margin-top: 10px;
+            border-top: 3px dotted black;
+        }
+        .t2thongTin .ta{
+            font-size: 30px;
+            margin: 30px 10px;
+        }
+        .tinPhai{
+            width: 35%;
+            height: 100%;
+            margin: 5px;
+            padding: 40px 15px;
+            display: inline-block;
+        }
+        .tinPhai .tin{
+            padding: 20px 50px 50px 50px;
+            background-color: beige;
+            border-radius: 20px 20px 0 0;
+        }
+        .tinPhai .hoaPhai {
+            padding-top: 15px;
+            border-top: 3px dotted black;
+        }
+        .tinPhai .hoaPhai img{
+            width: 100%;
+            padding: 5px;
+            border: 1px solid black;
+            margin: 0;
+        }
+        .hoaPhai p{
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 8px;
+        }
+        footer{
+            width: 100%;
+            height: 50px;
+            background-color: rgb(21, 46, 74);
+            display: inline-flex;
+        }
+        footer p{
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            margin-left: 20px;
+            line-height: 40px;
+        }
+        h3{
+            color: cornflowerblue;
+        }
+        </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="hleft">
+                <img src="../web4/img/Screenshot 2022-03-14 151720.png" alt="Hình hoa">
+                <div class="hlefttd">
+                    <h1>FlowerBox 360</h1>
+                    <p>...to get your daily dose of luxury roses!</p>
+                </div>
+            </div>
+            <div class="hright">
+                <div class="hrtim">
+                    <input class="a" type="button" style="margin-left: 50px;" value="GO">
+                    <input class="a" type="text" style="width: 250px;" placeholder="Search the site...">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>Home</li>
+                        <li>Promotion</li>
+                        <li>Gift Baskets</li>
+                        <li>Flower Services
+                            <ul class="submenu">
+                                <li>Flower for Wedding</li>
+                                <li>Flower for Conference</li>
+                            </ul>
+                        </li>
+                        <li>About</li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="center">
+            <div class="tinTrai">
+                <h2>Why Not Contact Us Today!</h2>
+                <div class="thanTrai">
+                    <div class="t1">
+                        <p>For FlowerBox 360 shoppers, that means not only can you send your friends and loved ones the highest quality flowers found on online, but that you can do so at a great value.</p>
+                        <table>
+                            <tr>
+                                <td>Name:</td>
+                                <td>Email:</td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <td>Telephone:</td>
+                                <td>Subject:</td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"></td>
+                                <td><input type="text"></td>
+                            </tr>
+                        </table>
+                        <h3>Message</h3><br>
+                        <textarea name="" id="" cols="45" rows="10"></textarea>
+                        <br><br>
+                        <input class="sub" type="submit" value="Submit">
+                        <input class="sub" type="submit" value="Reset">
+                    </div>
+                    <div class="t2">
+                        <p>Flower 360 Info!</p>
+                        <div class="t2thongTin">
+                            <div class="ta">Operating Hours:
+
+                                Monday-Friday: 9.00am-5.00pm.
+                                
+                                Saturday:9.00am-1.00pm. Sunday: Closed (No Deliveries) ORDER ONLINE 24/7</div>
+                            <div class="ta">Software Engineering Dept. Information Technology Falcuty First Floor, H Building</div>
+                            <div class="ta">12 Nguyen Van Bao St., Ward 4
+
+                                Go Vap District Ho Chi Minh City
+                                
+                                Tel: 0283 8940 390
+                                
+                                Fax: 0283.9940 954
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tinPhai">
+                <div class="tin">
+                    <h2>Dicounts & Specials</h2>
+                     <div class="hoaPhai">
+                        <img src="../web4/img/Autumn-Leaves-23_ce3f9.webp" alt="Hình lá mùa thu">
+                        <p>Reach Your Language Goals while Enjoying Your Free Time. Book Your Tutor from $5 an Hour. The Faster Way to Fluency. Fast Track Your English Learning with 5-Star Expert Tutors. </p>
+                        <div style="display:inline-flex; float: right;">
+                            <p><a style="text-decoration: none;" href="">Read more</a>
+                                <div class="ti-angle" style="padding: 5px;margin-top: 7px;">
+                                    <i class="ti-angle-double-right"></i>                             
+                                </div>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Copyright @ 2017 - All Rights Reserved </p>        
+            <h3>- Software Engineering Department - Industrial University Ho Chi Minh City</h3>     
+        </footer>
+    </div>
+</body>
+</html>
